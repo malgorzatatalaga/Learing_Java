@@ -4,6 +4,7 @@ public class ArraysLearn {
     public static void main(String[] args) {
         int[] array = {10, 11, 12, 13};
         int[] hold = {14, 15, 16, 17, 18, 19, 20};
+
         //Copying arrays
         System.arraycopy(array, 0, hold, 0, array.length);
         System.out.println(java.util.Arrays.toString(hold));
@@ -35,7 +36,6 @@ public class ArraysLearn {
         System.out.println("sum = " + sum);
 
         //Jagged Multidimensional Arrays (a set of arrays of different lengths)
-
         int[][] arr = new int[4][];
         arr[0] = new int[]{1, 3, 5, 7, 9};
         arr[1] = new int[]{2, 4, 6, 8};
