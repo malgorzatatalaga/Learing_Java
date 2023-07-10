@@ -40,8 +40,27 @@ public class ArraysLearn {
         arr[0] = new int[]{1, 3, 5, 7, 9};
         arr[1] = new int[]{2, 4, 6, 8};
         arr[3] = new int[]{77, 88, 99};
-
         System.out.println(Arrays.deepToString(arr));
 
+    }
+    public static boolean[] getSumCheckArray(int[] array) {
+        /*
+        The correct implementation should receive an array of int values and return an array of booleans
+        where each element is a result of a check if a corresponding element is a sum
+        of two previous elements in given array.
+         */
+        boolean[] booleans = new boolean[array.length];
+        booleans[0] = false;
+        booleans[1] = false;
+        for (int i = 2; i < array.length; i++) {
+            if (array[i - 2] + array[i - 1] == array[i]) {
+                booleans[i] = true;
+            } else if (array[i - 2] + array[i - 1] != array[i]) {
+                booleans[i] = false;
+            } else {
+                throw new UnsupportedOperationException();
+            }
+        }
+        return booleans;
     }
 }
