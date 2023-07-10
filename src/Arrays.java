@@ -32,5 +32,23 @@ public class Arrays {
         }
         System.out.println("sum = " + sum);
 
+        //Jagged Multidimensional Arrays (a set of arrays of different lengths)
+
+        int[][] arr = new int [4][];
+        arr[0] = new int [] { 1, 3, 5, 7, 9 };
+        arr[1] = new int [] { 2, 4, 6, 8 };
+        arr[3] = new int [] { 77, 88, 99 };
+
+        for (int[] row : arr) {
+            if (row != null) {
+                for (int element : row) {
+                    System.out.print(element + " ");
+                }
+            } else {
+                System.out.print(row);
+            }
+            System.out.println();
+        }
+
     }
 }
