@@ -55,10 +55,8 @@ public class ArraysLearn {
         for (int i = 2; i < array.length; i++) {
             if (array[i - 2] + array[i - 1] == array[i]) {
                 booleans[i] = true;
-            } else if (array[i - 2] + array[i - 1] != array[i]) {
-                booleans[i] = false;
             } else {
-                throw new UnsupportedOperationException();
+                booleans[i] = false;
             }
         }
         return booleans;

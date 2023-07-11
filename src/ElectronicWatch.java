@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class ElectronicWatch {
+    /*
+    The program must print an electronic watch screen output for a given value of seconds since midnight.
+    Output format is h:mm:ss.
+    Extra challenge: try to solve the task without using if statements or cycles.
+     */
     public void displayTime() {
         Scanner scanner = new Scanner(System.in);
         int seconds = scanner.nextInt();

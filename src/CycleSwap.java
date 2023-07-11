@@ -1,4 +1,10 @@
 public class CycleSwap {
+    /*
+    void cycleSwap(int[] array) - Shifts all the elements in the given array
+    in the right direction by 1 position.
+    void cycleSwap(int[] array, int shift) - Shift all the elements in the given array
+    in the right direction in the cycle manner by shift positions.
+     */
 
     static void cycleSwap(int[] array) {
         if (array.length > 0) {

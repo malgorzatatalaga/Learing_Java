@@ -1,5 +1,9 @@
 public class Spiral {
-
+    /*
+    Return a two-dimensional array coming in the form of a table and containing numbers from 1 up to rows * cols.
+    The size of the table will be specified by the given parameters.
+    Numbers fill the "table" clockwise from the top-level corner in a spiral manner.
+     */
     static int[][] spiral(int rows, int columns) {
         int maxNumber = rows * columns;
         int[][] spiral = new int[rows][columns];
