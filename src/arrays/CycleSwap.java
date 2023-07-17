@@ -1,3 +1,5 @@
+package arrays;
+
 public class CycleSwap {
     /*
     void cycleSwap(int[] array) - Shifts all the elements in the given array

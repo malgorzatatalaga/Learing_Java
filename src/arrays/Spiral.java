@@ -1,3 +1,5 @@
+package arrays;
+
 public class Spiral {
     /*
     Return a two-dimensional array coming in the form of a table and containing numbers from 1 up to rows * cols.

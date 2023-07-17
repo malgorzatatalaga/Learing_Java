@@ -1,3 +1,5 @@
+package datatypes;
+
 import java.util.Scanner;
 
 public class ElectronicWatch {
