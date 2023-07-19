@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5da8ee-7d67-4e2f-8433-c86a148be1c0" name="Changes" comment="getSumCheckArray">
-      <change afterPath="$PROJECT_DIR$/src/classes/Initialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learning_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Learning_Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysLearn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrays/ArraysLearn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CycleSwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrays/CycleSwap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElectronicWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datatypes/ElectronicWatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LocalMaximaRemove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrays/LocalMaximaRemove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spiral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arrays/Spiral.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
