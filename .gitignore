@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
-.idea/workspace.xml
+/.idea/.name
 ### Mac OS ###
 .DS_Store
 
