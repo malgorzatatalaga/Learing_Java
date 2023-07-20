@@ -1,4 +1,4 @@
-package classes;
+package projects.classes;
 
 public class DecrementingCarousel {
     static int actual;

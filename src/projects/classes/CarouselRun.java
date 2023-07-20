@@ -1,4 +1,4 @@
-package classes;
+package projects.classes;
 
 public class CarouselRun {
     private final int lastElementIndex = DecrementingCarousel.actual - 1;
