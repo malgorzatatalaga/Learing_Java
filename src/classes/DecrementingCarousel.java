@@ -1,38 +1,39 @@
 package classes;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class DecrementingCarousel {
+    static int actual;
+    static int[] numbers;
+    private final int capacity;
+    private int index;
     private boolean running;
 
-    private int numberOfElements = 0;
-    private int index = 0;
-
-    static List<Integer> carouselNumbers = new ArrayList<>();
-    private final int capacity;
+    {
+        index = 0;
+        running = false;
+        actual = 0;
+    }
 
     public DecrementingCarousel(int capacity) {
         this.capacity = capacity;
+        numbers = new int[capacity];
     }
 
-    public boolean addElement(int element){
-        if ((numberOfElements < capacity) && (element > 0) && !running) {
-            numberOfElements++;
-            carouselNumbers.add(element);
-            index++;
+    public boolean addElement(int element) {
+        if (!running && element > 0 && (actual < capacity)) {
+            numbers[index++] = element;
+            actual++;
             return true;
         } else {
             return false;
         }
     }
 
-    public CarouselRun run(){
-        if (running) {
-            return null;
-        } else {
+    public CarouselRun run() {
+        if (!running) {
             running = true;
             return new CarouselRun();
+        } else {
+            return null;
         }
     }
 }
