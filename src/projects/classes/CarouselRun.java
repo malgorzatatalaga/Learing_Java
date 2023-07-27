@@ -6,20 +6,44 @@ public class CarouselRun {
     private int index;
 
     public int next() {
+        int result;
         if (isFinished()) {
             return -1;
+        } else if (HalvingCarousel.isHalvingCarousel) {
+            result = halvingCarouselRun();
         } else {
+            result = decrementingCarouselRun();
+        }
+        return result;
+    }
+
+    public int halvingCarouselRun() {
+        int returnValue;
+        if (index > lastElementIndex) {
+            index = 0;
+        }
+        while (numbers[index] <= 0 && index <= lastElementIndex) {
+            index++;
             if (index > lastElementIndex) {
                 index = 0;
             }
-            while (numbers[index] <= 0 && index <= lastElementIndex) {
-                index++;
-                if (index > lastElementIndex) {
-                    index = 0;
-                }
-            }
-            return numbers[index++]--;
         }
+        returnValue = numbers[index];
+        numbers[index++] /= 2;
+        return returnValue;
+    }
+
+    public int decrementingCarouselRun() {
+        if (index > lastElementIndex) {
+            index = 0;
+        }
+        while (numbers[index] <= 0 && index <= lastElementIndex) {
+            index++;
+            if (index > lastElementIndex) {
+                index = 0;
+            }
+        }
+        return numbers[index++]--;
     }
 
     public boolean isFinished() {
