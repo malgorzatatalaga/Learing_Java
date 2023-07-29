@@ -11,9 +11,31 @@ public class CarouselRun {
             return -1;
         } else if (HalvingCarousel.isHalvingCarousel) {
             result = halvingCarouselRun();
+        } else if (GraduallyDecreasingCarousel.isGraduallyDecreasing) {
+            result = graduallyDecreasingCarousel();
         } else {
             result = decrementingCarouselRun();
         }
+        return result;
+    }
+
+    public int graduallyDecreasingCarousel() {
+        int decrement = GraduallyDecreasingCarousel.i;
+        if (index > lastElementIndex) {
+            decrement = GraduallyDecreasingCarousel.decrease();
+            index = 0;
+        }
+        while (numbers[index] <= 0 && index <= lastElementIndex) {
+            System.out.println(numbers[index]);
+            index++;
+            if (index > lastElementIndex) {
+                decrement = GraduallyDecreasingCarousel.decrease();
+                index = 0;
+            }
+        }
+        System.out.println(numbers[index]);
+        int result = numbers[index];
+        numbers[index++] -= decrement;
         return result;
     }
 
