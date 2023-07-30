@@ -2,9 +2,17 @@ package projects.classes;
 
 public class HalvingCarousel extends DecrementingCarousel {
 
-    static boolean isHalvingCarousel;
     public HalvingCarousel(int capacity) {
         super(capacity);
-        isHalvingCarousel = true;
+    }
+
+    @Override
+    public HalvingCarouselRun run() {
+        if (!running) {
+            running = true;
+            return new HalvingCarouselRun();
+        } else {
+            return null;
+        }
     }
 }
