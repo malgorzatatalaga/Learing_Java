@@ -1,31 +1,29 @@
 package projects.classes;
 
 public class DecrementingCarousel {
-    static int actual;
-    static int[] numbers;
-    private final int capacity;
-    private int index;
-    private boolean running;
 
     {
-        index = 0;
         running = false;
-        actual = 0;
+        currentNumberOfElements = 0;
     }
+
+    private final int capacity;
+    private int currentNumberOfElements;
+    static int[] elementsOfTheCarousel;
+    boolean running;
+
 
     public DecrementingCarousel(int capacity) {
         this.capacity = capacity;
-        numbers = new int[capacity];
+        elementsOfTheCarousel = new int[capacity];
     }
 
     public boolean addElement(int element) {
-        if (!running && element > 0 && (actual < capacity)) {
-            numbers[index++] = element;
-            actual++;
+        if (currentNumberOfElements < capacity && element > 0 && !running) {
+            elementsOfTheCarousel[currentNumberOfElements++] = element;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public CarouselRun run() {
