@@ -1,4 +1,4 @@
-package inheritance.tickets;
+package projects.inheritance.tickets;
 
 public class UserStory extends Ticket {
 

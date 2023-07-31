@@ -1,5 +1,5 @@
 Sprint Planning
-The purpose of this exercise is to train basic inheritance features.
+The purpose of this exercise is to train basic projects.inheritance features.
 
 Estimated workload of this exercise is 120 min.
 
