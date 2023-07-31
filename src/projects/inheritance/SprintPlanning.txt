@@ -1,13 +1,16 @@
 Sprint Planning
+
 The purpose of this exercise is to train basic projects.inheritance features.
 
 Estimated workload of this exercise is 120 min.
 
 Description
-In this exercise we are going to manage business logic of planning a sprint. A sprint is the basic unit of software development in SCRUM. Sprints are timeboxed. Time capacity of a sprint is agreed while planning. Then we consdier a sprint to be filled with some tasks.
+In this exercise we are going to manage business logic of planning a sprint.
+A sprint is the basic unit of software development in SCRUM. Sprints are timeboxed.
+Time capacity of a sprint is agreed while planning. Then we consdier a sprint to be filled with some tasks.
 
-We consider a task to be implemented with general-purpose Ticket class. But we also consider a sprint to accept only subtypes of the Ticket class: Bug and UserStory.
-
+We consider a task to be implemented with general-purpose Ticket class.
+But we also consider a sprint to accept only subtypes of the Ticket class: Bug and UserStory.
 
 Here are API details:
 
