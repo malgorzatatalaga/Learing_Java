@@ -1,4 +1,4 @@
-package projects.arrays;
+package projects.arrays.cycleswap;
 
 public class CycleSwap {
     /*
