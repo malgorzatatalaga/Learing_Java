@@ -2,7 +2,7 @@ package learn.interfaces.cloneable;
 
 import java.util.Date;
 
-public class Main {
+public class CloneableMain {
     public static void main(String[] args) {
         try {
             cloneAnObj();
