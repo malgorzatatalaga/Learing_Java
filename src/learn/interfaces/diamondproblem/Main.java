@@ -1,4 +1,4 @@
-package learn.interfaces;
+package learn.interfaces.diamondproblem;
 
 public class Main {
     public static void main(String[] args) {

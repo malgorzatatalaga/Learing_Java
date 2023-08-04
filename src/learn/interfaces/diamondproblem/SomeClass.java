@@ -1,8 +1,8 @@
-package learn.interfaces;
+package learn.interfaces.diamondproblem;
 
 public class SomeClass implements Interface1, Interface2 {
 
-    //common implementation of the interfaces' method
+    //common implementation of the interfaces' method - avoiding a compilation error
     @Override
     public String someMethod() {
         System.out.println("In interface2 = " + Interface2.someField);
