@@ -18,7 +18,7 @@ public class TaskCarousel {
     }
 
     public boolean addTask(Task task) {
-        if (tasks.size() < capacity && !task.isFinished()) {
+        if (task != null && !task.isFinished() && tasks.size() < capacity) {
             tasks.add(task);
             return true;
         }
