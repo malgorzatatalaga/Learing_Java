@@ -18,8 +18,8 @@ public class PatternClass {
         - true–if the text matches the regular expression
         - false–if it doesn't
          */
-        System.out.println(Pattern.matches("J.+a","Java"));
-        System.out.println(Pattern.matches("J.+a","Java JavaScript"));
+        System.out.println(Pattern.matches("J.+a", "Java"));
+        System.out.println(Pattern.matches("J.+a", "Java JavaScript"));
         /*
         The method split (CharSequence text, int limit) splits the given input sequence text
         into an array of strings String. The parameter limit controls the number of uses of the pattern and, thus,
@@ -44,7 +44,7 @@ public class PatternClass {
         System.out.println("Source string -> " + str2);
         for (String i : s2)
             System.out.println("Lexeme: " + i);
-        }
+    }
         /*
         If limit<0 – the pattern will be used as many times as possible and the array can have any length.
          */
