@@ -24,10 +24,10 @@ public class StringUtil {
         if (text == null || text.isBlank() || text.matches("[!,;.:? ]+?"))
             return null;
         else {
-            text = text.stripIndent();
+            text = text.trim();
             Pattern pattern = Pattern.compile("[!,;.:? ]+");
             String[] words = pattern.split(text);
-            if (words.length > 0 && words[0].isEmpty()) {
+            if (words.length > 0 && words[0].isBlank()) {
                 words = Arrays.copyOfRange(words, 1, words.length);
             }
             return words;
@@ -82,6 +82,13 @@ public class StringUtil {
         System.out.println("Result : " + Arrays.toString(splitResult));
         String[] expectedSplit = new String[]{"first", "second", "third"};
         System.out.println("Must be: " + Arrays.toString(expectedSplit));
+
+//        System.out.println("Test 3: convertPath");
+//        String unixPath = "/some/unix/path";
+//        String convertResult = convertPath(unixPath, true);
+//        System.out.println("Result: " + convertResult);
+//        String expectedWinPath = "C:\\some\\unix\\path";
+//        System.out.println("Must be: " + expectedWinPath);
 
         System.out.println("Test 4: joinWords");
         String[] toJoin = new String[]{"go", "with", "the", "", "FLOW"};
