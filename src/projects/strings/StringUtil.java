@@ -35,18 +35,31 @@ public class StringUtil {
     }
 
     public static String convertPath(String path, boolean toWin) {
-        return path;
+        if (path.isBlank()) {
+            return null;
+        } else {
+            throw new UnsupportedOperationException();
+        }
     }
 
     public static String joinWords(String[] words) {
         if (words == null || words.length == 0) {
             return null;
         }
+        int counter = 0;
+        for (String s: words) {
+            if (!s.isBlank()) {
+                counter++;
+            }
+        }
+        if (counter == 0) {
+            return null;
+        }
         StringBuilder stringBuilder = new StringBuilder("[");
         for (int i = 0; i < words.length - 1; i++) {
-            if (words[i] == null || words[i].isBlank()) {
+            if (words[i] == null) {
                 return null;
-            } else {
+            } else if (!words[i].isBlank()) {
                 stringBuilder.append(words[i]).append(", ");
             }
         }
