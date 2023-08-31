@@ -24,8 +24,13 @@ public class StringUtil {
         if (text == null || text.isBlank() || text.matches("[!,;.:? ]+?"))
             return null;
         else {
-            Pattern pattern = Pattern.compile("[ ,!;.:?]+");
-            return pattern.split(text);
+            text = text.stripIndent();
+            Pattern pattern = Pattern.compile("[!,;.:? ]+");
+            String[] words = pattern.split(text);
+            if (words.length > 0 && words[0].isEmpty()) {
+                words = Arrays.copyOfRange(words, 1, words.length);
+            }
+            return words;
         }
     }
 
@@ -34,14 +39,14 @@ public class StringUtil {
     }
 
     public static String joinWords(String[] words) {
-        if (words == null) {
+        if (words == null || words.length == 0) {
             return null;
         }
         StringBuilder stringBuilder = new StringBuilder("[");
         for (int i = 0; i < words.length - 1; i++) {
-            if (words[i] == null) {
+            if (words[i] == null || words[i].isBlank()) {
                 return null;
-            } else if (!words[i].isBlank()) {
+            } else {
                 stringBuilder.append(words[i]).append(", ");
             }
         }
