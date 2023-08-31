@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class StringUtil {
     public static int countEqualIgnoreCaseAndSpaces(String[] words, String sample) {
         int count = 0;
-        if (sample == null || sample.isBlank())
+        if (sample == null || words == null || sample.isBlank())
             return 0;
         else {
             sample = sample.trim();
@@ -35,7 +35,7 @@ public class StringUtil {
     }
 
     public static String convertPath(String path, boolean toWin) {
-        if (path.isBlank()) {
+        if (path == null || path.isBlank()) {
             return null;
         } else {
             throw new UnsupportedOperationException();
@@ -43,6 +43,8 @@ public class StringUtil {
     }
 
     public static String joinWords(String[] words) {
+        int caseInt;
+        String result = null;
         if (words == null || words.length == 0) {
             return null;
         }
@@ -55,6 +57,33 @@ public class StringUtil {
         if (counter == 0) {
             return null;
         }
+        if (words[words.length-1].isBlank()) {
+            caseInt = 0;
+        } else {
+            caseInt = 1;
+        }
+
+        switch (caseInt) {
+            case 0 -> result = case0(words);
+            case 1 -> result = case1(words);
+        }
+        return result;
+    }
+
+    private static String case0(String[] words) {
+        StringBuilder stringBuilder = new StringBuilder("[");
+        for (int i = 0; i < words.length - 2; i++) {
+            if (words[i] == null) {
+                return null;
+            } else if (!words[i].isBlank()) {
+                stringBuilder.append(words[i]).append(", ");
+            }
+        }
+        stringBuilder.append(words[words.length-2]).append("]");
+        return stringBuilder.toString();
+    }
+
+    private static String case1(String[] words) {
         StringBuilder stringBuilder = new StringBuilder("[");
         for (int i = 0; i < words.length - 1; i++) {
             if (words[i] == null) {
@@ -63,7 +92,7 @@ public class StringUtil {
                 stringBuilder.append(words[i]).append(", ");
             }
         }
-        stringBuilder.append(words[words.length - 1]).append("]");
+        stringBuilder.append(words[words.length-1]).append("]");
         return stringBuilder.toString();
     }
 
