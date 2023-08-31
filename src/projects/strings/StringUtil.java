@@ -21,10 +21,10 @@ public class StringUtil {
     }
 
     public static String[] splitWords(String text) {
-        if (text == null || text.isBlank())
+        if (text == null || text.isBlank() || text.matches("[!,;.:? ]+?"))
             return null;
         else {
-            Pattern pattern = Pattern.compile("[!,;.:? ]+");
+            Pattern pattern = Pattern.compile("[ ,!;.:?]+");
             return pattern.split(text);
         }
     }
