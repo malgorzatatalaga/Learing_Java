@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class Numbers {
+public class NumberFormatE {
     public static void main(String[] args) {
         double value;
         NumberFormat format = NumberFormat.getInstance(Locale.FRANCE);
