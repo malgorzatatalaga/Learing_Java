@@ -1,5 +1,6 @@
 package projects.exceptions;
 
+@SuppressWarnings("unused")
 public class Requirements {
 
     public static void requireNonNull(Object obj) {
