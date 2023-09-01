@@ -1,0 +1,18 @@
+Requirements
+
+The purpose of this exercise is to train you to work with exceptions, to raise them in particular.
+Estimated workload of this exercise is 30 min.
+
+Description
+
+Please, implement Requirements methods:
+
+- requireNonNull(Object) should throw new NullPointerException if object is null
+- requireNonNull(Object, String) should throw new NullPointerException with message if object is null
+- checkArgument(boolean) if boolean is false should throw new IllegalArgumentException
+- checkArgument(boolean, String) if boolean is false should throw new IllegalArgumentException with message
+- checkState(boolean) if boolean is false should throw new IllegalStateException
+- checkState(boolean, String) if boolean is false should throw new IllegalStateException with message
+- checkIndex(int, int) if index out of bounds throw new IndexOutOfBoundsException. Index must be inside [0, size) section.
+
+Such methods might be helpful to check arguments, object states.
