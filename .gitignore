@@ -2,6 +2,7 @@
 out/
 !**/src/main/**/out/
 /.idea/.name
+/.idea/shelf
 ### Mac OS ###
 .DS_Store
 
