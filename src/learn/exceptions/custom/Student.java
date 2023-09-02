@@ -2,7 +2,7 @@ package learn.exceptions.custom;
 
 public class Student {
     private String firstName;
-    private int group;
+    private final int group;
     private double mark;
     public Student(String firstName, int group) {
         this.firstName = firstName;
