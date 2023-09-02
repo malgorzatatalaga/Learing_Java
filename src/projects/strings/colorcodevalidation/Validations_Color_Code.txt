@@ -1,0 +1,12 @@
+Validations. Color Code
+
+The purpose of this exercise is to train you to work with string values.
+Estimated workload of this exercise is 45 min.
+
+Description
+
+Please, implement validateColorCode method in ColorCodeValidation:
+This method checks the input string for compliance with the rules for writing HTML Color Codes.
+While implementing the methods you might need to come up with regular expressions.
+You may consider using regex101.com to ease designing them.
+Note that input String may be null.
