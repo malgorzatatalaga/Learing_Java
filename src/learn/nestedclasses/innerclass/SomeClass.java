@@ -5,11 +5,11 @@ public class SomeClass {
      * creating an inner class instance outside its outer class
      * 1.
      */
-    Ship.Engine engine = new Ship().new Engine();
+    Demo.Engine engine = new Demo().new Engine();
 
     /**
      * 2.
      */
-    Ship ship = new Ship();
-    Ship.Engine eng = ship.new Engine();
+    Demo demo = new Demo();
+    Demo.Engine eng = demo.new Engine();
 }

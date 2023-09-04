@@ -1,5 +1,5 @@
 package learn.nestedclasses.innerclass;
-class Ship {
+class Demo {
     //invoking elements of inner and outer classes
     private int x = 10;
     protected class Engine {
