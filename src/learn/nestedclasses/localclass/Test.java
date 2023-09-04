@@ -1,6 +1,6 @@
 package learn.nestedclasses.localclass;
 
-class Ship {
+class Test {
     /**
      * A local class has access to local variables of the enclosing block that are declared as final
      * (for Java 7 and earlier) and effectively final (for Java 8 and later).
