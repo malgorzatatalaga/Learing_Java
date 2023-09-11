@@ -1,4 +1,4 @@
-package learn.nestedclasses.innerclass;
+package learn.nested.inner;
 class Demo {
     //invoking elements of inner and outer classes
     private int x = 10;

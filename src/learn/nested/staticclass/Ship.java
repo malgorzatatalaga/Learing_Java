@@ -1,4 +1,4 @@
-package learn.nestedclasses.staticclass;
+package learn.nested.staticclass;
 
 class Ship {
     public int x = 10;

@@ -1,4 +1,4 @@
-package learn.nestedclasses.anonymousclass;
+package learn.nested.anonymous;
 
 public class AnonymousClass {
     /**

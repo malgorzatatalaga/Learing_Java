@@ -1,4 +1,4 @@
-package learn.nestedclasses.staticclass;
+package learn.nested.staticclass;
 
 public class DemoNestedMain {
     public static void main(String[] args) {

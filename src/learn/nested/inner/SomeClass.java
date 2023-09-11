@@ -1,4 +1,4 @@
-package learn.nestedclasses.innerclass;
+package learn.nested.inner;
 
 public class SomeClass {
     /**

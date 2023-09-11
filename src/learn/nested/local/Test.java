@@ -1,4 +1,4 @@
-package learn.nestedclasses.localclass;
+package learn.nested.local;
 
 class Test {
     /**
