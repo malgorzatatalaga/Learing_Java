@@ -1,4 +1,6 @@
-package projects.classes;
+package projects.classes.extended;
+
+import projects.classes.extended.CarouselRun;
 
 public class DecrementingCarousel {
 

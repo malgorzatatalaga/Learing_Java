@@ -1,4 +1,4 @@
-package projects.classes;
+package projects.classes.extended;
 
 public class HalvingCarouselRun extends CarouselRun {
 

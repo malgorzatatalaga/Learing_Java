@@ -1,4 +1,4 @@
-package projects.classes;
+package projects.classes.extended;
 
 public class GraduallyDecreasingCarouselRun extends CarouselRun {
 
