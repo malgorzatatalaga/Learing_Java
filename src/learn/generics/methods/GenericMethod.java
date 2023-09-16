@@ -1,4 +1,4 @@
-package learn.generics;
+package learn.generics.methods;
 
 public class GenericMethod {
     public static <T> byte asByte(T num) {

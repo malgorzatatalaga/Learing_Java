@@ -1,4 +1,4 @@
-package learn.generics;
+package learn.generics.methods;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
