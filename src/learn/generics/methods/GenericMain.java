@@ -10,6 +10,5 @@ public class GenericMain {
         if (logger.isLoggable(Level.INFO)) {
             logger.info(String.valueOf(b));
         }
-
     }
 }
