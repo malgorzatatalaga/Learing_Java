@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class TypeRestrictionMain {
-    public static final Logger logger = Logger.getLogger(TypeRestrictionMain.class.getName());
+    private static final Logger logger = Logger.getLogger(TypeRestrictionMain.class.getName());
     public static void main(String[] args) {
         double  xDouble = Math.random() * 100;
         double  yDouble = Math.random() * 100;
