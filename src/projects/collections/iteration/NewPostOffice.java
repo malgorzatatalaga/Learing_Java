@@ -1,4 +1,4 @@
-package projects.collections;
+package projects.collections.iteration;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
