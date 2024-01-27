@@ -1,0 +1,50 @@
+Project skills
+The purpose of this exercise is to give you some practice using collections of the Set type.
+
+Duration: 1 hour
+
+Description
+In this task, you will determine the percentage of compliance of a certain team with project requirements.
+In other words, you will determine if the team is suitable for the project.
+
+You have the following description:
+
+- The Position enum defines a set of positions.
+- The Skill enum defines a set of skills.
+- The Level enum defines a set of skill levels.
+- The Member class defines a team member. Each member has a name, a level, and a set of skills
+  (a collection of the Set<Skill> type implemented as EnumSet<Skill>). TThe team is described as a set of members
+  in the form of HashSet<Member>.
+- The Role class defines the role of the participant in the project. Each role has a level, a position,
+  and required skills (a collection of the Set<Skill> type implemented as an EnumSet<Skill>).
+- The Project class defines the project and contains a description of it and a list of roles.
+- The Project.Entry class combines a skill and its level and is used in the algorithm for calculating the
+  team's compliance with the project.
+
+
+- public Member(String name, Level level, Skill... skills)
+Creates a member with the specified name, level, and skills
+Getters
+Return values of the appropriate fields
+
+- public Role(Position position, Level level, Skill... skills)
+Creates a role with the specified position, level, and skills
+Getters
+Return values of the appropriate fields
+
+- public Project(Role... roles)
+Creates a project with the specified roles
+public List<Role> getRoles()
+Returns a list of roles
+
+- public int getConformity(Set<Member> team)
+Returns the percentage of team compliance with the project requirements
+
+- private static class Entry {}
+Describes an entry containing a level/skill pair
+
+Restrictions
+You may not:
+• Add extra fields to classes
+• Add extra methods to classes
+• Use lambdas or streams when implementing this task
