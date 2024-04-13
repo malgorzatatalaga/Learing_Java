@@ -1,4 +1,4 @@
-# Introduction to Java ![57](https://progress-bar.dev/57)
+# Introduction to Java ![71](https://progress-bar.dev/71)
 https://training.epam.com/en/training/3632
 - Basics of Java programming
 - Collections
